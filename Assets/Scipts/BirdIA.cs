@@ -15,11 +15,13 @@ public class BirdIA : MonoBehaviour
     void Start()
     {
         Speed = Random.Range(MinSpeed, MaxSpeed);
+        if (isLeft) gameObject.GetComponent<SpriteRenderer>().flipX = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (isLeft) transform.position += transform.right * Speed * Time.deltaTime;
         if (!isLeft) transform.position -= transform.right * Speed * Time.deltaTime;
 
