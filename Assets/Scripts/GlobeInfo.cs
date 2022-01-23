@@ -7,6 +7,11 @@ public class GlobeInfo : MonoBehaviour
     [SerializeField]
     private int _lives;
 
+    public float Live;
+    // Start is called before the first frame update
+
+    public Animator animator;
+
     [SerializeField]
     private GameObject _healthPrefab;
 
@@ -28,6 +33,7 @@ public class GlobeInfo : MonoBehaviour
 
     public void ApplyDamage()
     {
+        animator.SetTrigger("Hit");
         Destroy(_hearts.Last());
         _hearts.RemoveAt(_hearts.Count - 1);
         if (!_hearts.Any())
