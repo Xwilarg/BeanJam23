@@ -1005,21 +1005,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< HEAD
-    - target: {fileID: 172587949, guid: a7af01b4fb160674b863584451641629, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3683177475638441760, guid: a7af01b4fb160674b863584451641629, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 3702720617107790250, guid: a7af01b4fb160674b863584451641629, type: 3}
-      propertyPath: _lives
-      value: 3
-      objectReference: {fileID: 0}
-=======
->>>>>>> master
     - target: {fileID: 3702720617107790250, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: _canvas
       value: 
@@ -1028,21 +1013,6 @@ PrefabInstance:
       propertyPath: GameOverMenu
       value: 
       objectReference: {fileID: 1148452191}
-<<<<<<< HEAD
-    - target: {fileID: 3702720617107790250, guid: a7af01b4fb160674b863584451641629, type: 3}
-      propertyPath: _healthPrefab
-      value: 
-      objectReference: {fileID: 7545510562323653825, guid: ed1f5fb7d7b4d104caad097daf6f0b1a, type: 3}
-    - target: {fileID: 4396610072141575628, guid: a7af01b4fb160674b863584451641629, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396610072141575628, guid: a7af01b4fb160674b863584451641629, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.56
-      objectReference: {fileID: 0}
-=======
->>>>>>> master
     - target: {fileID: 8135093196412258576, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: m_Name
       value: Player
