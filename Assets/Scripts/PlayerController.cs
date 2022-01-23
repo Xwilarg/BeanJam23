@@ -8,17 +8,30 @@ public class PlayerController : MonoBehaviour
 
     private bool _isGoingUp;
 
+    private AudioSource _source;
+    private GlobeInfo _globe;
+
     [SerializeField]
     private TMP_Text _scoreDisplay;
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _source = GetComponent<AudioSource>();
+        _globe = GetComponent<GlobeInfo>();
     }
 
     private void Update()
     {
+        if (!_globe.IsAlive)
+        {
+            return;
+        }
         _isGoingUp = Input.GetKey(KeyCode.Space);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _source.Play();
+        }
         _scoreDisplay.text = $"{(int)transform.position.y} meter{((int)transform.position.y > 1 ? "s" : "")}";
     }
 
