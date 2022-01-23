@@ -28,7 +28,7 @@ public class GlobeInfo : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1;
-        int size = 32;
+        int size = 40;
         for (int i = 0; i < _lives; i++)
         {
             var go = Instantiate(_healthPrefab, _canvas);
