@@ -20,6 +20,8 @@ public class StarSpawner : MonoBehaviour
     private Transform _player;
     private int _pos;
 
+    private List<int> _indexs = new();
+
     private float _nextPos;
 
     private void Start()
@@ -39,22 +41,25 @@ public class StarSpawner : MonoBehaviour
 
     private void SpawnStars()
     {
-        Debug.Log("Respawn stars");
-        foreach (var go in _oldStars)
+        if (!_indexs.Contains(CalculatePosition()))
         {
-            Destroy(go);
-        }
-        _oldStars.Clear();
-        _oldStars = new(_stars);
-        _stars.Clear();
-        for (int i = 0; i < _count; i++)
-        {
-            var go = Instantiate(_starPrefab, new Vector2(Random.Range(-_xRange, _xRange), Random.Range(-_yRange, _yRange) + _nextPos), Random.rotation);
-            go.GetComponent<SpriteRenderer>().sprite = _starSprites[Random.Range(0, _starSprites.Length)];
-            _stars.Add(go);
+            foreach (var go in _oldStars)
+            {
+                Destroy(go);
+            }
+            _oldStars.Clear();
+            _oldStars = new(_stars);
+            _stars.Clear();
+            for (int i = 0; i < _count; i++)
+            {
+                var go = Instantiate(_starPrefab, new Vector2(Random.Range(-_xRange, _xRange), Random.Range(-_yRange, _yRange) + _nextPos), Random.rotation);
+                go.GetComponent<SpriteRenderer>().sprite = _starSprites[Random.Range(0, _starSprites.Length)];
+                _stars.Add(go);
+            }
+            _indexs.Add(_pos);
+            _nextPos += _yRange;
         }
         _pos = CalculatePosition();
-        _nextPos += _yRange;
     }
 
     private int CalculatePosition()
