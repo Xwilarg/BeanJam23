@@ -286,9 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21387b0af4d310d41bddf69932dab006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xRange: 10
-  _yRange: 10
-  _count: 30
+  _xRange: 50
+  _yRange: 50
+  _count: 10000
   _starPrefab: {fileID: 6183293889818650237, guid: 518541f335aa8614ea118f8338f1ce2a, type: 3}
   _starSprites:
   - {fileID: 21300000, guid: 216382bbec5af3b438f5c38923660874, type: 3}
