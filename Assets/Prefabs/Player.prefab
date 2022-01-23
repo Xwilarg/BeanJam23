@@ -273,8 +273,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568885c5eaa40584490cbba0897702d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lives: 0
   Live: 10
   animator: {fileID: 172587943}
+  _healthPrefab: {fileID: 0}
+  _canvas: {fileID: 0}
 --- !u!61 &172587949
 BoxCollider2D:
   m_ObjectHideFlags: 0

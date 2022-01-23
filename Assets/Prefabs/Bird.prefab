@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8242030120750213993}
   - component: {fileID: 4916957649991548297}
   - component: {fileID: -4459952729901333619}
-  - component: {fileID: -4789007443458712715}
   - component: {fileID: 140457415}
+  - component: {fileID: -4789007443458712715}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -131,6 +131,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.154178, y: 0.032726653}
   m_EdgeRadius: 0
+--- !u!95 &140457415
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4754896063670706446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8b59a8bcc483254c9460217d8cafca7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &-4789007443458712715
 Rigidbody2D:
   serializedVersion: 4
@@ -152,23 +172,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &140457415
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754896063670706446}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 26e50211f76d111499af46199ff3a686, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
