@@ -349,10 +349,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 0 meter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 880568acc604d2c4493ba94b1f09342d, type: 2}
+  m_sharedMaterial: {fileID: -7292093806152212590, guid: 880568acc604d2c4493ba94b1f09342d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -481,5 +481,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8135093196412258581, guid: a7af01b4fb160674b863584451641629, type: 3}
+      propertyPath: _scoreDisplay
+      value: 
+      objectReference: {fileID: 1233765673}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7af01b4fb160674b863584451641629, type: 3}

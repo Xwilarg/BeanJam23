@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,6 +8,9 @@ public class PlayerController : MonoBehaviour
 
     private bool _isGoingUp;
 
+    [SerializeField]
+    private TMP_Text _scoreDisplay;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -15,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         _isGoingUp = Input.GetKey(KeyCode.Space);
+        _scoreDisplay.text = $"{(int)transform.position.y} meter{((int)transform.position.y > 1 ? "s" : "")}";
     }
 
     private void FixedUpdate()
