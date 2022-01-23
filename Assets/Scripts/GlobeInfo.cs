@@ -1,11 +1,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class GlobeInfo : MonoBehaviour
 {
     [SerializeField]
     private int _lives;
+
+    [SerializeField]
+    public GameObject GameOverMenu;
 
     public float Live;
     // Start is called before the first frame update
@@ -22,6 +28,7 @@ public class GlobeInfo : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         int size = 32;
         for (int i = 0; i < _lives; i++)
         {
@@ -38,9 +45,15 @@ public class GlobeInfo : MonoBehaviour
         _hearts.RemoveAt(_hearts.Count - 1);
         if (!_hearts.Any())
         {
-            Debug.Log("GameOver");
+            GameOverMenu.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 
     public bool IsAlive => _hearts.Any();
+
+    public static void Reset()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
