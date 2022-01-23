@@ -1205,7 +1205,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1410342685799587322, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.68
+      value: -4.68
       objectReference: {fileID: 0}
     - target: {fileID: 3702720617107790250, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: _canvas
@@ -1301,7 +1301,7 @@ PrefabInstance:
       objectReference: {fileID: 1429341351}
     - target: {fileID: 7828268135440467246, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.68
+      value: -4.6800003
       objectReference: {fileID: 0}
     - target: {fileID: 8135093196412258576, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: m_Name
