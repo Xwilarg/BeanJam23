@@ -577,6 +577,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3683177475073378000, guid: a7af01b4fb160674b863584451641629, type: 3}
+      propertyPath: _count
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3683177475073378000, guid: a7af01b4fb160674b863584451641629, type: 3}
+      propertyPath: _yRange
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 3702720617107790250, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: _lives
       value: 3
