@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BirdIA : MonoBehaviour
@@ -8,7 +6,6 @@ public class BirdIA : MonoBehaviour
     public float MaxSpeed;
     public float MinSpeed;
     public float Live;
-    public float Damage;
 
     public bool isLeft;
     // Start is called before the first frame update
@@ -33,7 +30,7 @@ public class BirdIA : MonoBehaviour
     {
         if(collision.gameObject.tag == "Globe")
         {
-            collision.gameObject.GetComponent<GlobeInfo>().AplyDamage(Damage);
+            collision.gameObject.GetComponent<GlobeInfo>().ApplyDamage();
             Destroy(gameObject);
         }
     }
