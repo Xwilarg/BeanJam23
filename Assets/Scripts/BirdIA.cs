@@ -26,9 +26,9 @@ public class BirdIA : MonoBehaviour
         Live -= Time.deltaTime;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Globe")
+        if (collision.collider.CompareTag("Globe"))
         {
             collision.gameObject.GetComponent<GlobeInfo>().ApplyDamage();
             Destroy(gameObject);

@@ -25,6 +25,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         _rb.AddForce(Vector2.up * (_isGoingUp ? 1f : 0f) * _force);
-        _rb.velocity = new Vector2(0f, Mathf.Clamp(_rb.velocity.y, -10f, 10f));
+        _rb.velocity = new Vector2(0f, Mathf.Clamp(_rb.velocity.y, -5f, 5f));
     }
 }
