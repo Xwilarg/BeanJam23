@@ -7,6 +7,8 @@ public class GlobeInfo : MonoBehaviour
 
     public float Live;
     // Start is called before the first frame update
+
+    public Animator animator;
     void Start()
     {
         
@@ -20,6 +22,7 @@ public class GlobeInfo : MonoBehaviour
 
     public void AplyDamage(float d)
     {
+        animator.SetTrigger("Hit");
         Live -= d;
         if (Live <= 0)
         {
