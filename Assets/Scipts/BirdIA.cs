@@ -7,7 +7,8 @@ public class BirdIA : MonoBehaviour
     public float Speed;
     public float MaxSpeed;
     public float MinSpeed;
-    public float Live; 
+    public float Live;
+    public float Damage;
 
     public bool isLeft;
     // Start is called before the first frame update
@@ -24,5 +25,14 @@ public class BirdIA : MonoBehaviour
 
         if (Live <= 0) Destroy(this.gameObject);
         Live -= Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Globe")
+        {
+            collision.gameObject.GetComponent<GlobeInfo>().AplyDamage(Damage);
+            Destroy(gameObject);
+        }
     }
 }
