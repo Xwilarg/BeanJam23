@@ -1228,6 +1228,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1148452191}
     - target: {fileID: 4396610072141575629, guid: a7af01b4fb160674b863584451641629, type: 3}
+      propertyPath: MaxTimeToSpawn
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396610072141575629, guid: a7af01b4fb160674b863584451641629, type: 3}
       propertyPath: Spawners.Array.size
       value: 24
       objectReference: {fileID: 0}
