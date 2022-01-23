@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 3683177475638441760}
   - component: {fileID: 3683177475638441761}
   - component: {fileID: 3683177475638441762}
+  - component: {fileID: 1442588677}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -94,7 +95,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -135,6 +136,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3683177475638441763}
   m_Enabled: 1
+--- !u!114 &1442588677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3683177475638441763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d277c54970ad246baca7f7d30ecaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartColor: {r: 0, g: 0.9906864, b: 1, a: 0}
+  EndColor: {r: 0, g: 0, b: 0, a: 0}
+  SpaceDistance: 100
 --- !u!1 &8135093196412258576
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +168,7 @@ GameObject:
   - component: {fileID: 172587943}
   - component: {fileID: 1950436899}
   - component: {fileID: 1950436909}
+  - component: {fileID: 6079300342090349295}
   m_Layer: 0
   m_Name: Player
   m_TagString: Globe
@@ -449,6 +466,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &6079300342090349295
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8135093196412258576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0076229274, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0968871, y: 1.6}
+  m_EdgeRadius: 0
 --- !u!1001 &1251319982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -470,7 +513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4396610070959527266, guid: abe53ab24d2efb74db7ed7e4b59acc2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 8.56
       objectReference: {fileID: 0}
     - target: {fileID: 4396610070959527266, guid: abe53ab24d2efb74db7ed7e4b59acc2c, type: 3}
       propertyPath: m_LocalPosition.z
